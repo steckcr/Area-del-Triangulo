@@ -5,26 +5,36 @@
 // 
 
 #include <iostream>
-
-float base=0;             // Declaracion de la variable "base" del tipo flotante
-float altura=0;           // Declaracion de la variable "altura" del tipo flotante
-float resultado=0;        // Declaracion de la variable "resultado" del tipo flotante
-
-
+                
 int main() {
-std::cout << "Ingrese el valor de la base del triángulo: " << std::endl;   // Lee dato del teclado y  
-std::cin >> base;                                                          // lo almacena en "base"
 
-std::cout << "Ingrese el valor de la altura del triángulo: " << std::endl; // Lee dato del teclado y
-std::cin >> altura;                                                        // lo almacena en "altura"
+// Declaracion de la variable "base" del tipo flotante
+float base=0;
+
+// Declaracion de la variable "altura" del tipo flotante
+float altura=0;
+
+// Declaracion de la variable "resultado" del tipo flotante
+float resultado=0;
 
 
-resultado=(base*altura)/2; // Realiza la operacion del cálculo de la altura y lo almacena en "resultado"
+// Lee dato del teclado
+std::cout << "Ingrese el valor de la base del triángulo: " << std::endl;     
+// Almacena el dato en "base"
+std::cin >> base;                                                          
 
-std::cout << "El área del triángulo es: " << resultado << std::endl; // Muestra el resultado del área
+// Lee dato del teclado
+std::cout << "Ingrese el valor de la altura del triángulo: " << std::endl;  
+// Almacena el dato en "altura"
+std::cin >> altura;                                                        
 
+// Realiza la operacion del cálculo de la altura y lo almacena en "resultado"
+resultado=(base*altura)/2; 
 
-return (0);
+// Muestra el resultado del área
+std::cout << "El área del triángulo es: " << resultado << std::endl; 
+
+return 0;
 
 
 }
